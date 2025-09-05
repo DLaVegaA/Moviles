@@ -1,0 +1,1 @@
+Aplicación creada en Android Studio desarrollado con Jetpack Compose, la app fue creada con el propósito de entender el como funcionan los fragments y los distintos elementos que se pueden utilizar dentro de estos, utiliza 5 fragments para explicar los textfields, botones, elementos de selección, listas y elementos de información.
