@@ -8,8 +8,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import com.example.p1.ui.theme.P1Theme // Asegúrate que el nombre de tu tema sea correcto
-import com.example.p1.TextFieldsScreen // O la ruta completa si está en un subpaquete
+import com.example.p1.ui.theme.P1Theme
+import com.example.p1.TextFieldsScreen
 import com.example.p1.ButtonsScreen
 import com.example.p1.SelectionScreen
 import com.example.p1.ListsScreen
