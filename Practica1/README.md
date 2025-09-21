@@ -75,3 +75,12 @@ La versión de Jetpack Compose está estructurada en MainActivity.kt, Navigation
 
 ## Dificultades
 
+Las dificultades que me encontre haciendo este proyecto fue al instalar Flutter, fue un proceso dificil de llevar ya que la documentación no es muy clara en algunos puntos. Al final pude resolverlo con paciencia y con ayuda de IAs para entender lo que estaba causando errores dentro de visual studio y los SDK necesarios para poder utilizar Flutter de manera correcta.
+
+## Hallazgos
+
+Ambos frameworks son declarativos. Sin embargo, su enfoque difiere:
+
+* Flutter: Construye la UI como un árbol de Widgets, donde cada elemento, incluyendo el diseño y el espaciado, es un widget inmutable. Utiliza un enfoque explícito dentro de un StatefulWidget. El desarrollador debe modificar el estado y luego invocar el método setState() para notificar al framework que debe reconstruir la UI. Utiliza parámetros nombrados en los constructores de los widgets para la configuración (ej. children: []) y envuelve widgets en otros para aplicar estilos (ej. Padding).
+
+* Jetpack Compose: Define la UI mediante funciones Composable que se llaman entre sí. La estructura es un árbol de llamadas a funciones que describen la interfaz. El estado se gestiona con delegados como remember { mutableStateOf(...) }. Cuando el valor de este estado cambia, Compose detecta automáticamente qué partes de la UI dependen de él y las "recompone" (vuelve a dibujar) sin necesidad de una llamada explícita. Utiliza un sistema de Modifiers encadenables para aplicar atributos de forma fluida y legible. Los composables hijos se definen dentro de una lambda final, resultando en un código anidado menos profundo.
